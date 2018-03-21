@@ -31,11 +31,11 @@ img{
 	width: 40%;
 	display:block;
 	padding:0 2em;
-	float:left;
+	float:right;
 }
 
 
-/* Nicer fonts */
+/* Easy to read font */
 h1 {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 3em;
@@ -48,14 +48,14 @@ h3 {
 	font-size: 2em;
 	font-style: normal;
 	font-variant: normal;
-	font-weight: 500;
+	font-weight: 450;
 }
 p {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 1em;
 	font-style: normal;
 	font-variant: normal;
-	font-weight: 400;
+	font-weight: 350;
 	line-height: 1.5em;
 }
 
@@ -64,10 +64,10 @@ ul li{
 	font-size: 1em;
 	font-style: normal;
 	font-variant: normal;
-	font-weight: 400;
+	font-weight: 350;
 }
 
-/* Top horizontal nav pane*/
+/* Navigation bar*/
 
 #header ul {
     list-style-type: none;
@@ -81,12 +81,12 @@ ul li{
 }
 
 #header li {
-	float: right;
+	float: left;
 }
 
 #header li a {
     display: block;
-    color: white;
+    color: maroon;
     text-align: center;
     padding: 1em;
     text-decoration: none;
@@ -98,6 +98,6 @@ ul li{
 }
 
 .active{
-	background-color: #2ecc71;
+	background-color: #5e8783;
 	color:white;
 }
