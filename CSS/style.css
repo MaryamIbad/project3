@@ -32,7 +32,7 @@ img{
 	width: 40%;
 	display:block;
 	padding:0 2em;
-	float:left;
+	float:right;
 }
 
 
@@ -82,12 +82,12 @@ ul li{
 }
 
 #header li {
-	float: right;
+	float: left;
 }
 
 #header li a {
     display: block;
-    color: white;
+    color: green;
     text-align: center;
     padding: 1em;
     text-decoration: none;
@@ -95,10 +95,10 @@ ul li{
 
 /* Change the link color to #111 (black) on hover */
 #header li a:hover {
-    background-color: #222222;
+    background-color: #a4d879;
 }
 
 .active{
-	background-color: #2ecc71;
+	background-color: #a4d879;
 	color:white;
 }
