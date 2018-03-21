@@ -1,9 +1,20 @@
-body{
-  background-color: blue;
+
+body {
+  margin: 0;
+  padding: 0;
+  background: white;
+}
+
+header{
+  text-align: center;
+}
+
+img{
+  margin-top: 1em;
 }
 .nav ul {
   list-style: none;
-  background-color: #444;
+  background-color: black;
   text-align: center;
   padding: 0;
   margin: 0;
@@ -31,4 +42,58 @@ body{
   background-color: #fff;
   color: #444;
   cursor: default;
+}
+
+@media screen and (min-width: 800px) {
+  .nav li {
+    width: 120px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }
+
+  /* Option 1 - Display Inline */
+  .nav li {
+    display: inline-block;
+    margin-right: -4px;
+  }
+}
+.center{
+  text-align: center;
+}
+.block{
+  margin: 50px;
+  border: 3px solid black;
+  background-color: white;
+  padding: 20px;
+}
+
+#page{
+  background-color: lightgrey;
+  border: 3px solid black;
+  padding: 25px;
+	margin:5vh auto;
+	max-width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+h2,h3,h4
+{
+  text-align: center;
+}
+.heading
+{
+  background-color: yellow;
+  padding: 20px;
+}
+footer{
+  text-align: center;
+  background-color:black;
+  color: white;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  position: fixed;
 }
