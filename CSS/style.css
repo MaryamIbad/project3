@@ -1,103 +1,34 @@
-
-#content{
-	margin:5vh auto;
-	max-width: 80%;
-  display: flex;
-  flex-direction: column;
+body{
+  background-color: blue;
+}
+.nav ul {
+  list-style: none;
+  background-color: #444;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.nav li {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #888;
 }
 
-img{
-	width:100%;
-	margin:0;
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: .3s background-color;
 }
 
-.item{
-	margin:3em 0;
-	width:100%;
-	display: flex;
-	flex-flow: row wrap;
-
-
+.nav a:hover {
+  background-color: #005f5f;
 }
 
-.left{
-	width:50%;
-	padding:0;
-	float:left;
-
-}
-
-.right{
-	width: 40%;
-	display:block;
-	padding:0 2em;
-	float:right;
-}
-
-
-/* Easy to read font */
-h1 {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 3em;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 500;
-}
-h3 {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 2em;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 450;
-}
-p {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 1em;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 350;
-	line-height: 1.5em;
-}
-
-ul li{
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 1em;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 350;
-}
-
-/* Navigation bar*/
-
-#header ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-
-    text-align: center;
-
-}
-
-#header li {
-	float: left;
-}
-
-#header li a {
-    display: block;
-    color: green;
-    text-align: center;
-    padding: 1em;
-    text-decoration: none;
-}
-
-/* Change the link color on hover */
-#header li a:hover {
-    background-color: #5e8783;
-}
-
-.active{
-	background-color: #5e8783;
-	color:black;
+.nav a.active {
+  background-color: #fff;
+  color: #444;
+  cursor: default;
 }
