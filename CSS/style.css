@@ -86,7 +86,7 @@ ul li{
 
 #header li a {
     display: block;
-    color: maroon;
+    color: green;
     text-align: center;
     padding: 1em;
     text-decoration: none;
@@ -94,7 +94,7 @@ ul li{
 
 /* Change the link color to #111 (black) on hover */
 #header li a:hover {
-    background-color: #222222;
+    background-color: #5e8783;
 }
 
 .active{
