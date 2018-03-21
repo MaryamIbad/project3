@@ -92,12 +92,12 @@ ul li{
     text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
+/* Change the link color on hover */
 #header li a:hover {
     background-color: #5e8783;
 }
 
 .active{
 	background-color: #5e8783;
-	color:white;
+	color:black;
 }
