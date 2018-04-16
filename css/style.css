@@ -1,4 +1,6 @@
-
+html {
+  overflow-y: scroll;
+}
 
 #content{
 	margin:5vh auto;
