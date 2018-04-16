@@ -1,106 +1,152 @@
-html {
-  overflow-y: scroll;
-}
-
 #content{
-	margin:5vh auto;
-	max-width: 80%;
-  display: flex;
-  flex-direction: column;
+margin:5vh auto;
+max-width: 80%;
+display: flex;
+flex-direction: column;
 }
-
+.float_center {
+float: right;
+position: relative;
+left: -50%; /* or right 50% */
+text-align: left;
+}
+.float_center > .child {
+position: relative;
+left: 50%;
+}
+.center{
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 50%;
+}
 img{
-	width:100%;
-	margin:0;
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 50%;
 }
-
+section { 
+display: block;
+}
+video {
+width: 100%;
+height: auto;
+}
 .item{
-	margin:3em 0;
-	width:100%;
-	display: flex;
-	flex-flow: row wrap;
-
-
+margin:3em 0;
+width:100%;
+display: flex;
+flex-flow: row wrap;
 }
-
-.left{
-	width:50%;
-	padding:0;
-	float:left;
-
+.Row
+{
+display: table;
+width: 100%;
+table-layout: fixed;
+border-spacing: 10px;
 }
-
-.left{
-	width: 40%;
-	display:block;
-	padding:0 2em;
-	float:left;
+.Column
+{
+display: table-cell;
+background-color: teal;
 }
-
-
-/* Nicer fonts */
 h1 {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 3em;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 500;
+font-family: "Times New Roman", Times, serif;
+font-size: 3em;
+font-style: normal;
+font-variant: normal;
+font-weight: 500;
+text-align:center; 
+}
+h2 {
+font-family: "Times New Roman", Times, serif;
+font-size: 3em;
+font-style: normal;
+font-variant: normal;
+font-weight: 500;
+text-align:center; 
 }
 h3 {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 2em;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 500;
+font-family: "Times New Roman", Times, serif;
+font-size: 2em;
+font-style: normal;
+font-variant: normal;
+font-weight: 500;
+text-align:center; 
 }
 p {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 1em;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 400;
-	line-height: 1.5em;
+font-family: "Times New Roman", Times, serif;
+font-size: 1em;
+font-style: normal;
+font-variant: normal;
+font-weight: 400;
+line-height: 1.5em;
+text-align:center; 
 }
-
-ul li{
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 1em;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 400;
+p.solid {
+border-style: solid;
 }
-
-/* Top horizontal nav pane*/
-
-#header ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-
-    text-align: center;
-
+p.dotted {
+border-style: dotted;
 }
-
-#header li {
-	float: left;
+p.dashed {
+border-style: dashed;
 }
-
-#header li a {
-    display: block;
-    color: green;
-    text-align: center;
-    padding: 1em;
-    text-decoration: none;
+/* Top horizontal navigation pane*/
+#header{
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #333;
+text-align:center; 
 }
-
+li {
+display:inline-block; 
+}
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+li a:hover {
+background-color: #111;
+}
 /* Change the link color to #111 (black) on hover */
 #header li a:hover {
-    background-color: #a4d879;
+background-color: #222222;
 }
-
 .active{
-	background-color: #a4d879;
-	color:white;
+background-color:#008080;
+color:teal;
+}
+body{
+background-color:#008080;
+font-family:"Courier New", Courier, monospace;
+border: 0.1em solid teal;
+padding-top: 1em;
+padding-right: 3em;
+padding-bottom: 5em;
+padding-left: 3em;
+}
+.indexbody{
+background-color:#e6b3ff;
+font-family:Impact;
+border: 0.1em solid purple;
+padding-top: 1em;
+padding-right: 3em;
+padding-bottom: 5em;
+padding-left: 3em;
+}
+.rbody{
+background-color:#b3b3ff;
+font-family:"Comic Sans MS", cursive, sans-serif;
+border: 0.1em solid green;
+padding-top: 1em;
+padding-right: 3em;
+padding-bottom: 5em;
+padding-left: 3em;
 }
