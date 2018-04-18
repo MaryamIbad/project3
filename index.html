@@ -31,11 +31,30 @@
       <p>I have had a great semester here last year. And I am looking forward to another great semester here.</p>
       <p>I am also planning on doing my co-terminal degree here at IIT, in Data Security.</p>   
       <p>In here you will find links to my favorite music from my country, and the region that I belong to. Along with my resume, and a little information about me. </p>
-      <h2>Email</h2>
-      <p><a href="mailto:mibad@hawk.iit.edu">mibad@hawk.iit.edu</a></p>
     </div>
     </article>
   </section>
+      
+  <h3>Places</h3>
+  <div class="center">
+      <p style="font-weight: bold">Below are the places that I have lived at or visited</p>
+  </div>
+  <div id="map"></div>
+  <script src="javascript/script.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcGgYMjWSomCfJHGkYRKGw7J_IswjAPrI&callback=initMap"></script>
+  <div class="center">
+    <p id="demo"></p>
+    <button type="button" onclick="goto(chicago,places[0])">Chicago, IL</button>
+    <button type="button" onclick="goto(boston,places[1])">boston, MA</button>
+    <button type="button" onclick="goto(Peshawar,places[2])">Peshawar, Pakistan</button>
+    <button type="button" onclick="goto(Karachi,places[3])">Karachi, Pakistan</button>
+  </div>
+  <h3>Contact</h3>
+  <address>
+    <div class="center">
+      <p style="padding-bottom: 2em">Email: mibad@hawk.iit.edu</p>
+    </div>
+  </address>
       
 </body>
 </html>
