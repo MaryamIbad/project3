@@ -26,6 +26,16 @@ margin-left: auto;
 margin-right: auto;
 width: 50%;
 }
+#MyCountry {
+  text-align: center;
+}
+.slider img {
+  display: block;
+  margin: 0 auto;
+}
+.bx-wrapper {
+  margin: auto;
+}
 section { 
 display: block;
 }
