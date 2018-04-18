@@ -26,11 +26,25 @@
         </a>
       </div>
       <div class="center">
-       <h1>Maryam's Home Page</h1>
+      <h1>Maryam's Home Page</h1>
       <p>I am a 3rd year ITM student here at IIT. I plan to major in CyberSecurity. This is my first ever web development class.</p>
       <p>I have had a great semester here last year. And I am looking forward to another great semester here.</p>
       <p>I am also planning on doing my co-terminal degree here at IIT, in Data Security.</p>   
       <p>In here you will find links to my favorite music from my country, and the region that I belong to. Along with my resume, and a little information about me. </p>
+<<<<<<< HEAD
+=======
+            
+    <h1 id="MyCountry">Stuff from My Country</h1>
+    <div class="slider">
+    <div><img src="../project3/image/city-entrance.jpg" title="Entrance to my hometown"></div>
+    <div><img src="../project3/image/city-map.jpg" title="map of my hometown"></div>
+    <div><img src="../project3/image/pottery.jpg" title="pottery"></div>
+    <div><img src="../project3/image/city.jpg" title="my hometown"></div>
+    <div><img src="../project3/image/textile-map.jpg" title="textile map of Pakistan"></div>
+    </div>       
+    <h2>Email</h2>
+    <p><a href="mailto:mibad@hawk.iit.edu">mibad@hawk.iit.edu</a></p>
+>>>>>>> 646780b6a6fe103e448b90e98b7c1e176c2a7b45
     </div>
     </article>
   
@@ -39,66 +53,22 @@
   <div class="center">
       <p style="font-weight: bold">Below are the places that I have lived at or visited</p>
   </div>
- <article class="item">
-      <div class="left">
-        <div id="map"></div>
-        <script>
-          var map;
-          var hell_michigan = {lat: 42.4347, lng: -83.9850};
-          var hell_california = {lat: 33.690833, lng: -115.272778};
-          var hell_norway = {lat: 63.4444, lng: 10.9227};
-          var big_name = {lat: 53.2232, lng: -4.2008};
-          function initMap() {
-            map = new google.maps.Map(document.getElementById('map'), {
-              zoom: 5,
-              center: {lat: 41.8781, lng: -87.6298},
-              mapTypeId: 'terrain'
-            });
-            // Create a <script> tag and set the USGS URL as the source.
-            var script = document.createElement('script');
-            // This example uses a local copy of the GeoJSON stored at
-            // http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_week.geojsonp
-            script.src = 'https://developers.google.com/maps/documentation/javascript/examples/json/earthquake_GeoJSONP.js';
-            document.getElementsByTagName('head')[0].appendChild(script);
-            map.data.setStyle(function(feature) {
-              var magnitude = feature.getProperty('mag');
-              return {
-                icon: getCircle(magnitude)
-              };
-            });
-          }
-          function getCircle(magnitude) {
-            return {
-              path: google.maps.SymbolPath.CIRCLE,
-              fillColor: 'red',
-              fillOpacity: .2,
-              scale: Math.pow(2, magnitude) / 2,
-              strokeColor: 'white',
-              strokeWeight: .5
-            };
-          }
-          function eqfeed_callback(results) {
-            map.data.addGeoJson(results);
-          }
-          function goto(location){
-            map.panTo(location);
-            map.setZoom(12);
-          }
-        </script>
-        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZKyRAZ06CBFw0it8hoWQG9HOFj2SNFmQ&callback=initMap">
-        </script>
-      </div>
-      <div class="right">
-        <h3>Map of Recent Earthquakes</h3>
-        <p>The map  uses real-time earthquake data from the United States Geological Survey (USGS)</p>
-        <p>The USGS website provides their data in a number of formats, which you can copy to your domain for local access by your application.</p>
-        <p>Click the buttons below to go to a place!</p>
-        <button type="button" onclick="goto(hell_michigan)">Hell, Michigan</button>
-        <button type="button" onclick="goto(hell_california)">Hell, California</button>
-        <button type="button" onclick="goto(hell_norway)">Hell, Norway</button>
-        <button type="button" onclick="goto(big_name)">Llanfairpwllgwyngyll, Wales</button>
-      </div>
-    </article>
+  <div id="map"></div>
+  <script src="javascript/script.js"></script>
+  <script async defer src="<iframe src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQxHFKrXyzkdSSm-KmHgqHEZtvzjfWHlo"></script>
+  <div class="center">
+    <p id="demo"></p>
+    <button type="button" onclick="goto(chicago,places[0])">Chicago, IL</button>
+    <button type="button" onclick="goto(boston,places[1])">boston, MA</button>
+    <button type="button" onclick="goto(Peshawar,places[2])">Peshawar, Pakistan</button>
+    <button type="button" onclick="goto(Karachi,places[3])">Karachi, Pakistan</button>
+  </div>
+  <h3>Contact</h3>
+  <address>
+    <div class="center">
+      <p style="padding-bottom: 2em">Email: mibad@hawk.iit.edu</p>
+    </div>
+  </address>
  </section>
 </body>
 </html>
